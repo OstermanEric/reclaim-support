@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Support for Reclaim: Earn Your Screen Time.">
+  <meta name="theme-color" content="#111411">
+  <title>Support — Reclaim</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --background: #111411;
+      --surface: #1a1f1a;
+      --surface-raised: #222822;
+      --text: #f3f6f1;
+      --muted: #aeb8ab;
+      --accent: #c7ff45;
+      --border: #343d33;
+      --content-width: 760px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 50% -20%, rgba(199, 255, 69, 0.12), transparent 36rem),
+        var(--background);
+      color: var(--text);
+      font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--accent);
+      text-underline-offset: 0.2em;
+    }
+
+    a:hover { text-decoration-thickness: 2px; }
+
+    a:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 4px;
+      border-radius: 2px;
+    }
+
+    header,
+    main,
+    footer {
+      width: min(calc(100% - 2rem), var(--content-width));
+      margin-inline: auto;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-block: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .brand {
+      color: var(--text);
+      font-size: 1.05rem;
+      font-weight: 750;
+      letter-spacing: -0.02em;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.25rem;
+      font-size: 0.94rem;
+    }
+
+    nav a[aria-current="page"] {
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    main { padding-block: clamp(3.5rem, 8vw, 6rem); }
+
+    .eyebrow {
+      margin: 0 0 0.75rem;
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 12ch;
+      margin: 0;
+      font-size: clamp(2.7rem, 9vw, 5rem);
+      line-height: 0.98;
+      letter-spacing: -0.055em;
+    }
+
+    .lede {
+      max-width: 60ch;
+      margin: 1.5rem 0 0;
+      color: var(--muted);
+      font-size: clamp(1.08rem, 2.5vw, 1.25rem);
+    }
+
+    .contact-card {
+      margin: 3rem 0;
+      padding: clamp(1.4rem, 5vw, 2rem);
+      border: 1px solid rgba(199, 255, 69, 0.4);
+      border-radius: 18px;
+      background: rgba(199, 255, 69, 0.06);
+    }
+
+    .contact-card h2 {
+      margin-bottom: 0.35rem;
+      color: var(--accent);
+    }
+
+    .contact-link {
+      display: inline-block;
+      margin-top: 0.65rem;
+      font-size: clamp(1.05rem, 4vw, 1.35rem);
+      font-weight: 750;
+      overflow-wrap: anywhere;
+    }
+
+    section {
+      padding-block: 1.5rem;
+      border-top: 1px solid var(--border);
+    }
+
+    h2 {
+      margin: 0 0 0.7rem;
+      font-size: 1.35rem;
+      letter-spacing: -0.025em;
+    }
+
+    h3 {
+      margin: 1.35rem 0 0.35rem;
+      font-size: 1rem;
+    }
+
+    p { margin: 0.6rem 0; }
+
+    ul,
+    ol {
+      margin: 0.7rem 0;
+      padding-left: 1.3rem;
+    }
+
+    li + li { margin-top: 0.65rem; }
+
+    strong { color: var(--text); }
+
+    footer {
+      padding-block: 2rem 3rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 520px) {
+      header { align-items: flex-start; }
+      nav { gap: 0.85rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="https://ostermaneric.github.io/reclaim-support/">Reclaim</a>
+    <nav aria-label="Site navigation">
+      <a href="https://ostermaneric.github.io/reclaim-privacy/">Privacy</a>
+      <a href="https://ostermaneric.github.io/reclaim-support/" aria-current="page">Support</a>
+    </nav>
+  </header>
+
+  <main>
+    <p class="eyebrow">Reclaim: Earn Your Screen Time</p>
+    <h1>How can I help?</h1>
+    <p class="lede">
+      Get help with your account, Screen Time controls, rewards, Health access, Lichess, or
+      anything else in Reclaim.
+    </p>
+
+    <div class="contact-card">
+      <h2>Contact support</h2>
+      <p>Send an email and include the details below. You'll receive a reply as soon as practical.</p>
+      <a class="contact-link" href="mailto:ejosterman@gmail.com?subject=Reclaim%20Support">
+        ejosterman@gmail.com
+      </a>
+    </div>
+
+    <section>
+      <h2>What to include</h2>
+      <p>These details make it easier to diagnose an issue:</p>
+      <ul>
+        <li>your Reclaim app version and build number;</li>
+        <li>your iPhone model and iOS version;</li>
+        <li>what you expected to happen and what happened instead;</li>
+        <li>the steps that reproduce the issue; and</li>
+        <li>a screenshot, if useful, with private information removed.</li>
+      </ul>
+      <p>
+        Never send a password, Sign in with Apple authorization code, Health record, Screen Time
+        token, or Lichess access token.
+      </p>
+    </section>
+
+    <section>
+      <h2>Quick help</h2>
+
+      <h3>I can't sign in</h3>
+      <p>
+        Confirm that you're using the same sign-in method you used when creating the account.
+        If you signed up with Apple, choose <strong>Continue with Apple</strong>. For an
+        email-and-password account, use the password-reset option and check your spam folder.
+      </p>
+
+      <h3>Walking or workout rewards are missing</h3>
+      <p>
+        Open the iPhone <strong>Settings</strong> app, then go to
+        <strong>Privacy &amp; Security → Health → Reclaim</strong> and confirm the requested read
+        access is enabled. Open Reclaim again after changing access. Health rewards are based on
+        eligible data that Apple Health has already recorded.
+      </p>
+
+      <h3>Screen Time controls aren't working</h3>
+      <p>
+        Open Reclaim and review its Screen Time setup and selected distractions. If iOS asks for
+        Screen Time authorization, approve it. Also confirm that Screen Time is enabled on the
+        iPhone. Restarting Reclaim after changing authorization can refresh the current state.
+      </p>
+
+      <h3>Lichess activity isn't appearing</h3>
+      <p>
+        Disconnect and reconnect Lichess from Reclaim's settings, then complete the authorization
+        flow again. Reclaim only requests the Lichess permission it needs for puzzle activity.
+      </p>
+
+      <h3>My balance changed after reinstalling</h3>
+      <p>
+        Sign in with the same Reclaim account and allow recovery to finish. Reclaim syncs a
+        compact recovery state rather than uploading raw Screen Time, HealthKit, or detailed
+        Lichess activity.
+      </p>
+    </section>
+
+    <section>
+      <h2>Privacy and account deletion</h2>
+      <p>
+        Read the
+        <a href="https://ostermaneric.github.io/reclaim-privacy/">Reclaim Privacy Policy</a>
+        for details about what stays on your device and what is stored with Firebase.
+      </p>
+      <p>
+        To permanently delete your Reclaim account, open
+        <strong>Settings → Account → Delete Account</strong> in the app. If you cannot access the
+        app, email
+        <a href="mailto:ejosterman@gmail.com?subject=Reclaim%20Account%20Deletion">ejosterman@gmail.com</a>
+        from the address connected to your account.
+      </p>
+    </section>
+
+    <section>
+      <h2>TestFlight feedback</h2>
+      <p>
+        If you're testing Reclaim through TestFlight, you can also send beta feedback and attach
+        a screenshot from the TestFlight app. Include a short description of what you were doing
+        when the issue occurred.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Reclaim. Earn your time back.
+  </footer>
+</body>
+</html>
