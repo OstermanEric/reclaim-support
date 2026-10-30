@@ -8,6 +8,7 @@ actions. Fonts are self-hosted from the native app with their Open Font Licenses
 in `assets/`. There are no added analytics, advertising scripts, or external font
 requests. Both public repositories share the same stylesheet.
 
-Updated October 7, 2026 against the current native/backend source. Recheck
+Lichess references removed October 30, 2026. Other content was last reconciled
+against native/backend source October 7, 2026. Recheck
 content when authentication, recovery, providers, advertising, or SDKs change.
 Preview with `python3 -m http.server 8000` from this directory.
